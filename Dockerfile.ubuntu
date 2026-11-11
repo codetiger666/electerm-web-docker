@@ -37,7 +37,7 @@ RUN chown -R electerm:electerm /app
 USER electerm:electerm
 
 # Clone and build the application
-RUN git clone --depth 1 https://github.com/electerm/electerm-web.git
+RUN git clone --depth 1 https://github.com/codetiger666/electerm-web.git
 WORKDIR /app/electerm-web
 RUN npm config set legacy-peer-deps true \
 && npm i \
